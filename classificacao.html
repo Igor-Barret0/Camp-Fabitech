@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classificação</title>
+    <link rel="stylesheet" href="classificacao.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiv5KWizAkJ5Wr8Qu8VAOrb1GavS7lwPNQEA&usqp=CAU"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Campeonato, Time ou Jogador" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </div>
+          </label>
+        </div>
+
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-header">
+      <nav>
+        <ul>
+          <li><a href="partidas.html">Partidas</a></li>
+          <li><a href="classificacao.html">Classificação</a></li>
+          <li><a href="estatistica.html">Estatísticas</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button id="topButton" onclick="scrollTopFunction()">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+    <main>
+      <section class="container-class">
+        <h2>Classificação</h2>
+        <h3>Campeonato de Cervejaria</h3>
+        <div class="grupo">
+          <h4>Grupo A</h4>
+          <table>
+            <tr>
+              <th></th>
+              <th>Nome do Time</th>
+              <th>Pontos</th>
+              <th>Jogos</th>
+              <th class="none">Vitórias</th>
+              <th class="none">Empates</th>
+              <th class="none">Derrotas</th>
+              <th class="none">GM</th>
+              <th class="none">GC</th>
+              <th class="none">SG</th>
+              <th class="none">% Aproveitamento</th>
+            </tr>
+
+            <tr>
+              <td class="primeiros">1</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+
+            <tr>
+              <td class="primeiros">2</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td class="ultimo">6</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="grupo">
+          <h4>Grupo B</h4>
+          <table>
+            <tr>
+              <th></th>
+              <th>Nome do Time</th>
+              <th>Pontos</th>
+              <th>Jogos</th>
+              <th class="none">Vitórias</th>
+              <th class="none">Empates</th>
+              <th class="none">Derrotas</th>
+              <th class="none">GM</th>
+              <th class="none">GC</th>
+              <th class="none">SG</th>
+              <th class="none">% Aproveitamento</th>
+            </tr>
+
+            <tr>
+              <td class="primeiros">1</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+
+            <tr>
+              <td class="primeiros">2</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td class="ultimo">6</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="grupo">
+          <h4>Grupo C</h4>
+          <table>
+            <tr>
+              <th></th>
+              <th>Nome do Time</th>
+              <th>Pontos</th>
+              <th>Jogos</th>
+              <th class="none">Vitórias</th>
+              <th class="none">Empates</th>
+              <th class="none">Derrotas</th>
+              <th class="none">GM</th>
+              <th class="none">GC</th>
+              <th class="none">SG</th>
+              <th class="none">% Aproveitamento</th>
+            </tr>
+
+            <tr>
+              <td class="primeiros">1</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+
+            <tr>
+              <td class="primeiros">2</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+            <tr>
+              <td class="ultimo">6</td>
+              <td class="alinhar-time">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Flamengo</p>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">2</td>
+              <td class="none">2</td>
+              <td class="none">0</td>
+              <td class="none">33.7%</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023</p>
+      <p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="contato.html">Contato</a>
+      </p>
+    </footer>
+  </body>
+
+  <!-- Icons  -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Levar para o topo da página -->
+  <script src="levarAoTopo.js"></script>
+
+  <!-- Dark mode -->
+  <script src="darkMode.js"></script>
+</html>

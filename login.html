@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiv5KWizAkJ5Wr8Qu8VAOrb1GavS7lwPNQEA&usqp=CAU"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Campeonato, Time ou Jogador" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </div>
+          </label>
+        </div>
+
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-header">
+      <nav>
+        <ul>
+          <li><a href="partidas.html">Partidas</a></li>
+          <li><a href="classificacao.html">Classificação</a></li>
+          <li><a href="estatistica.html">Estatísticas</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Container principal -->
+    <main>
+      <div class="container-login">
+        <div class="form-image">
+          <img src="assets/img/imgLogin.png" alt="" />
+        </div>
+        <div class="form">
+          <form onsubmit="return validateForm()">
+            <div class="form-header">
+              <div class="title">
+                <h2>Login</h2>
+              </div>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Digite seu nick"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <div class="password-input">
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Digite sua senha"
+                />
+                <ion-icon name="eye-outline" class="toggle-password"></ion-icon>
+              </div>
+            </div>
+            <div class="error-message" id="error-message"></div>
+            <div class="continue-button">
+              <button>Entrar</button>
+            </div>
+          </form>
+          <div class="error-message" id="error-message"></div>
+          <div class="sociais-rede">
+            <div class="container">
+              <hr />
+              <p>Faça login com outras contas</p>
+              <hr />
+            </div>
+            <ul class="social-icons">
+              <li>
+                <a href="#" target="_blank" title="Login with Facebook">
+                  <ion-icon name="logo-facebook"></ion-icon> Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="Login with Google">
+                  <ion-icon name="logo-google"></ion-icon> Google
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023</p>
+      <p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="contato.html">Contato</a>
+      </p>
+    </footer>
+  </body>
+
+  <!-- icons  -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Mostrar Senha -->
+  <script src="verSenha.js"></script>
+  <!-- Dark mode -->
+  <script src="darkMode.js"></script>
+
+  <!-- Validar Login  -->
+  <script src="validarSenha.js"></script>
+</html>

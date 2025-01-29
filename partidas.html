@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partidas</title>
+    <link rel="stylesheet" href="partidas.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiv5KWizAkJ5Wr8Qu8VAOrb1GavS7lwPNQEA&usqp=CAU"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Campeonato, Time ou Jogador" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </div>
+          </label>
+        </div>
+
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-header">
+      <nav>
+        <ul>
+          <li><a href="partidas.html">Partidas</a></li>
+          <li><a href="classificacao.html">Classificação</a></li>
+          <li><a href="estatistica.html">Estatísticas</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button id="topButton" onclick="scrollTopFunction()">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+    <main>
+      <div class="container-box">
+        <img
+          src="assets/img/Campeonato.jpeg"
+          alt="Logotipo da liga"
+          class="logo"
+        />
+        <h3 class="titulo-campeonato">Campeonato de Cervejaria</h3>
+
+        <section>
+          <!-- Fase do Campeonato -->
+          <h2>Próximas Partidas</h2>
+          <!-- Dropdown para seleção de rodada -->
+          <select id="rodada-select">
+            <option value="rodada1">Grupo A</option>
+            <option value="rodada2">Grupo B</option>
+            <!-- Adicione mais opções conforme necessário -->
+          </select>
+          <!-- Tabelas para próximos jogos e jogos encerrados -->
+          <div class="tabelas">
+            <div id="jogos-proximos" class="tabela">
+              <!-- Conteúdo da tabela de próximos jogos será preenchido via JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!-- Fase do Campeonato -->
+          <h2>Partidas Encerradas</h2>
+          <!-- Dropdown para seleção de rodada para partidas encerradas -->
+          <select id="rodada-encerradas-select">
+            <option value="rodada1">Grupo A</option>
+            <option value="rodada2">Grupo B</option>
+            <!-- Adicione mais opções conforme necessário -->
+          </select>
+          <!-- Tabela para partidas encerradas -->
+          <div class="tabelas">
+            <div id="partidas-encerradas" class="tabela">
+              <!-- Conteúdo da tabela de partidas encerradas será preenchido via JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="info-torcedores">
+            <h2>Ingressos e Informações para Torcedores</h2>
+            <p>
+              <strong>Preços dos Ingressos:</strong> Verifique os preços dos
+              ingressos no site oficial do campeonato ou na bilheteria do
+              estádio. Lembre-se de que os preços podem variar dependendo da
+              categoria do assento e do jogo.
+            </p>
+            <!-- Adicione mais informações conforme necessário -->
+          </div>
+        </section>
+
+        <!-- Redes Sociais e Atualizações -->
+        <section>
+          <div class="redes-sociais">
+            <h2>Redes Sociais e Atualizações</h2>
+            <p>
+              Siga-nos nas redes sociais para obter as últimas atualizações e
+              notícias do campeonato:
+            </p>
+            <ul>
+              <li>
+                <a href="#" target="_blank" title="facebook"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="instagram"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="youtube"
+                  ><ion-icon name="logo-youtube"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023</p>
+      <p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="contato.html">Contato</a>
+      </p>
+    </footer>
+  </body>
+
+  <!-- Icons  -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Exibir rodadas  -->
+  <script src="partidas.js"></script>
+  <!-- Levar para o topo da página -->
+  <script src="levarAoTopo.js"></script>
+  <!-- Dark mode  -->
+  <script src="darkMode.js"></script>
+</html>

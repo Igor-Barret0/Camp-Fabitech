@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estatísticas</title>
+    <link rel="stylesheet" href="estatistica.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiv5KWizAkJ5Wr8Qu8VAOrb1GavS7lwPNQEA&usqp=CAU"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Campeonato, Time ou Jogador" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </div>
+          </label>
+        </div>
+
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-header">
+      <nav>
+        <ul>
+          <li><a href="partidas.html">Partidas</a></li>
+          <li><a href="classificacao.html">Classificação</a></li>
+          <li><a href="estatistica.html">Estatísticas</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button id="topButton" onclick="scrollTopFunction()">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+    <main class="container-estatistica">
+      <section id="artilheiros">
+        <h2>Artilheiro</h2>
+        <table>
+          <tr>
+            <th>Jogador</th>
+            <th>Time</th>
+            <th>Gols</th>
+            <th>Partidas</th>
+          </tr>
+          <tr>
+            <td>Jogador 1</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo" />
+              Time 1
+            </td>
+            <td>10</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Jogador 2</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo" />
+              Time 1
+            </td>
+            <td>9</td>
+            <td>3</td>
+          </tr>
+          <!-- Adicione mais artilheiros aqui -->
+        </table>
+      </section>
+
+      <section id="estatisticas-individuais">
+        <h2>Estatísticas Individuais</h2>
+        <table>
+          <tr>
+            <th>Jogador</th>
+            <th>Time</th>
+            <th>Jogos</th>
+            <th>Gols</th>
+            <th>Assistências</th>
+            <th class="none">Cartões Amarelos</th>
+            <th>Cartões Vermelhos</th>
+          </tr>
+          <tr>
+            <td>Jogador 1</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo Time 1" />
+              Time 1
+            </td>
+            <td>7</td>
+            <td>5</td>
+            <td>3</td>
+            <td class="none">2</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Jogador 2</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo Time 2" />
+              Time 2
+            </td>
+            <td>8</td>
+            <td>6</td>
+            <td>2</td>
+            <td class="none">1</td>
+            <td>0</td>
+          </tr>
+          <!-- Adicione mais jogadores e estatísticas individuais aqui -->
+        </table>
+      </section>
+
+      <section id="estatisticas-de-equipe">
+        <h2>Estatísticas da Equipe</h2>
+        <table>
+          <tr>
+            <th>Equipe</th>
+            <th>Média de Idade</th>
+            <th>Média de Posse de Bola</th>
+            <th class="none">Média de Chutes a Gol</th>
+            <th>Média de Gols Marcados</th>
+            <th>Média de Gols Sofridos</th>
+
+            <th>Jogos Sem Sofrer Gol</th>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo" />
+              Time 2
+            </td>
+            <td>25</td>
+            <td>55%</td>
+            <td>8</td>
+            <td class="none">2.1</td>
+            <td>1.2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo" />
+              Time 2
+            </td>
+            <td>26</td>
+            <td>48%</td>
+            <td>7</td>
+            <td class="none">1.8</td>
+            <td>1.4</td>
+            <td>2</td>
+          </tr>
+          <!-- Adicione mais equipes e estatísticas de equipe aqui -->
+        </table>
+      </section>
+
+      <section id="estatisticas-historicas">
+        <h2>Estatísticas Históricas</h2>
+        <table>
+          <tr>
+            <th>Time</th>
+            <th class="none">Data de Fundação</th>
+            <th>Títulos</th>
+            <th>Maior Artilheiro</th>
+            <th>Mais Jogos Disputados</th>
+            <th>Time Rival</th>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo" />
+              Time 1
+            </td>
+            <td class="none">15/02/1990</td>
+            <td>5</td>
+            <td>Jogador X (50 gols)</td>
+            <td>Jogador Y (200 jogos)</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo " />
+              Time 1
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo " />
+              Time 2
+            </td>
+            <td class="none">10/04/1985</td>
+            <td>3</td>
+            <td>Jogador Z (45 gols)</td>
+            <td>Jogador W (180 jogos)</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo " />
+              Time 2
+            </td>
+          </tr>
+          <!-- Adicione mais linhas para outros times, se necessário -->
+        </table>
+      </section>
+
+      <section id="lesoes-e-suspensoes">
+        <h2>Lesões e Suspensões</h2>
+        <table>
+          <tr>
+            <th>Jogador</th>
+            <th>Time</th>
+            <th>Tipo</th>
+            <th>Motivo</th>
+            <th>Duração</th>
+          </tr>
+          <tr>
+            <td>Jogador 1</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo " />
+              Time 2
+            </td>
+            <td>Lesão</td>
+            <td>Fratura no tornozelo</td>
+            <td>4 semanas</td>
+          </tr>
+          <tr>
+            <td>Jogador 2</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo " />
+              Time 2
+            </td>
+            <td>Suspensão</td>
+            <td>Recebeu 2 cartões amarelos</td>
+            <td>3 jogos</td>
+          </tr>
+          <tr>
+            <td>Jogador 3</td>
+            <td>
+              <img src="assets/img/barcelona.png" alt="Logo " />
+              Time 2
+            </td>
+            <td>Lesão</td>
+            <td>Distensão muscular na coxa</td>
+            <td>6 semanas</td>
+          </tr>
+          <!-- Adicione mais linhas para outros jogadores com lesões ou suspensões e seus motivos -->
+        </table>
+      </section>
+
+      <section id="dados-demograficos">
+        <h2>Dados Demográficos dos Jogadores em Relação a Nacionalidade</h2>
+        <canvas id="grafico-de-barras" width="400" height="200"></canvas>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023</p>
+      <p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="contato.html">Contato</a>
+      </p>
+    </footer>
+  </body>
+
+  <!-- Icon Script -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Levar para o topo da página -->
+  <script src="levarAoTopo.js"></script>
+  <!-- Biblioteca do gráfico -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="grafico.js"></script>
+  <!-- Dark mode -->
+  <script src="darkMode.js"></script>
+</html>

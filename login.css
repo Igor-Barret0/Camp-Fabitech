@@ -1,0 +1,293 @@
+/* ----------------------------Tela de Login----------------------------*/
+.container-login {
+  max-width: 1200px;
+  margin: 30px auto 43px auto;
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid var(--color-first);
+  box-shadow: 0 5px 15px;
+  overflow: hidden;
+  background-color: var(--bg-first);
+}
+
+.form-image {
+  width: 60%;
+  background-color: var(--color-first);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-image img {
+  width: 100%;
+}
+
+.form {
+  border-left: 3px solid var(--color-first);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-first);
+  padding: 48px;
+}
+
+.form-header {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-header .title h2 {
+  color: var(--color-first);
+  font-size: 45px;
+}
+
+.form-header h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background-color: var(--color-second);
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  margin: 10px 0;
+  padding: 15px 80px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--color-second);
+  box-shadow: 4px 4px var(--color-sixth);
+}
+.input-box input:hover {
+  background: rgb(205, 205, 205);
+  border: 2px solid var(--color-first);
+}
+
+.input-box label {
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--color-second);
+}
+
+.input-box input::placeholder {
+  color: black;
+}
+
+.continue-button {
+  display: flex;
+  justify-content: center;
+}
+
+.continue-button button {
+  width: 50%;
+  margin-top: 10px;
+  border: none;
+  background-color: var(--color-first);
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid var(--color-first);
+  color: var(--color-third);
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.continue-button button:hover {
+  background-color: var(--hover-first);
+  border: 3px solid var(--color-first);
+  box-shadow: 0 0 25px var(--color-first);
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--bg-box);
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--color-second);
+}
+
+.password-input ion-icon {
+  margin-left: -50px; /* Ajuste o valor conforme necessário para alinhar o ícone adequadamente */
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* HR */
+.container {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.container hr {
+  flex-grow: 1;
+  border-style: inset;
+  border-width: 1px;
+  border-color: var(--color-second);
+}
+
+.container p {
+  margin: 0 10px;
+  color: var(--color-second);
+}
+
+/* Estilizando a lista de ícones */
+.sociais-rede {
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  list-style: none;
+  margin: 20px 15px;
+  /* padding: 10px; */
+  background: var(--color-first);
+  border: 3px solid var(--color-first);
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.social-icons a {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-third);
+}
+.social-icons a:hover {
+  background-color: var(--hover-first);
+  box-shadow: 0 0 25px var(--color-first);
+}
+
+.social-icons a ion-icon {
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .container-login {
+    flex-direction: column;
+  }
+
+  .form-image {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+    border-left: none;
+    border-top: 3px solid var(--color-first);
+  }
+
+  .form-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-header .title h2 {
+    font-size: 30px;
+  }
+
+  .form-header h2::after {
+    width: 50px;
+  }
+
+  .input-box input {
+    padding: 13px 40px;
+  }
+
+  .continue-button button {
+    width: 100%;
+  }
+
+  .sociais-rede ul {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .container-login {
+    margin: 60px auto 60px auto;
+  }
+
+  .form-image {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-login {
+    margin: 90px auto 90px auto;
+  }
+
+  .form {
+    padding: 30px;
+  }
+
+  .input-box input {
+    padding: 10px 30px;
+  }
+
+  .continue-button button {
+    font-size: 16px;
+  }
+
+  .password-input input {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-login {
+    margin: 100px auto 100px auto;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .input-box input {
+    padding: 10px 20px;
+  }
+
+  .continue-button button {
+    font-size: 14px;
+  }
+
+  .password-input input {
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campeonato</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiv5KWizAkJ5Wr8Qu8VAOrb1GavS7lwPNQEA&usqp=CAU"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Campeonato, Time ou Jogador" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </div>
+          </label>
+        </div>
+
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-header">
+      <nav>
+        <ul>
+          <li><a href="partidas.html">Partidas</a></li>
+          <li><a href="classificacao.html">Classificação</a></li>
+          <li><a href="estatistica.html">Estatísticas</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button id="topButton" onclick="scrollTopFunction()">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="carousel-container">
+            <button id="prevButton">
+              <ion-icon name="arrow-undo-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="carousel">
+            <!-- confronto 01 -->
+            <div class="card-slider active">
+              <div class="header-card-slider">
+                <h2>Campeonato Amador 01</h2>
+                <p>Rodada 01</p>
+                <p>Horário: 19:00</p>
+              </div>
+              <div class="plays-card-slider">
+                <div class="play01">
+                  <img src="assets/img/Internacional.png" alt="" />
+                  <p>Inter</p>
+                </div>
+                <div class="score-card-slider">
+                  <p>2 - 2</p>
+                </div>
+                <div class="play02">
+                  <img src="assets/img/Flamengo.png" alt="" />
+                  <p>Framengo</p>
+                </div>
+              </div>
+            </div>
+            <!-- confronto 02 -->
+            <div class="card-slider">
+              <div class="header-card-slider">
+                <h2>Campeonato Amador 02</h2>
+                <p>Rodada 01</p>
+                <p>Horário: 07:00</p>
+              </div>
+              <div class="plays-card-slider">
+                <div class="play01">
+                  <img src="assets/img/barcelona.png" alt="" />
+                  <p>Barça</p>
+                </div>
+                <div class="score-card-slider">
+                  <p>3 - 1</p>
+                </div>
+                <div class="play02">
+                  <img src="assets/img/Servilla.png" alt="" />
+                  <p>Servilla</p>
+                </div>
+              </div>
+            </div>
+            <!-- confronto 03 -->
+            <div class="card-slider">
+              <div class="header-card-slider">
+                <h2>Campeonato Amador 03</h2>
+                <p>Rodada 01</p>
+                <p>Horário: 21:00</p>
+              </div>
+              <div class="plays-card-slider">
+                <div class="play01">
+                  <img src="assets/img/Flamengo.png" alt="" />
+                  <p>Framengo</p>
+                </div>
+                <div class="score-card-slider">
+                  <p>2 - 4</p>
+                </div>
+                <div class="play02">
+                  <img src="assets/img/barcelona.png" alt="" />
+                  <p>Barça</p>
+                </div>
+              </div>
+            </div>
+            <!-- Add mais cartões conforme necessário -->
+          </div>
+          <div class="carousel-container">
+            <button id="nextButton">
+              <ion-icon name="arrow-redo-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-class">
+          <h2>Tabela de Classificação</h2>
+          <div class="home-classificacao">
+            <table>
+              <tr>
+                <th></th>
+                <th>Nome do Time</th>
+                <th>Pontos</th>
+                <th>Jogos</th>
+                <th class="none">Vitórias</th>
+                <th class="none">Empates</th>
+                <th class="none">Derrotas</th>
+                <th class="none">WO</th>
+                <th class="none">GM</th>
+                <th class="none">GC</th>
+                <th class="none">SG</th>
+                <th class="none">% Aproveitamento</th>
+              </tr>
+
+              <tr>
+                <td class="primeiros">1</td>
+                <td class="alinhar-time">
+                  <img src="assets/img/barcelona.png" alt="" />
+                  <p>Barcelona</p>
+                </td>
+                <td>8</td>
+                <td>4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">33.7%</td>
+              </tr>
+
+              <tr>
+                <td class="primeiros">2</td>
+                <td class="alinhar-time">
+                  <img src="assets/img/Flamengo.png" alt="" />
+                  <p>Flamengo</p>
+                </td>
+                <td>8</td>
+                <td>4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">33.7%</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td class="alinhar-time">
+                  <img src="assets/img/Internacional.png" alt="" />
+                  <p>Internacional</p>
+                </td>
+                <td>8</td>
+                <td>4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">33.7%</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="alinhar-time">
+                  <img src="assets/img/Servilla.png" alt="" />
+                  <p>Sevilla</p>
+                </td>
+                <td>8</td>
+                <td>4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">33.7%</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td class="alinhar-time">
+                  <img src="assets/img/barcelona.png" alt="" />
+                  <p>BarSemLona</p>
+                </td>
+                <td>8</td>
+                <td>4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">33.7%</td>
+              </tr>
+              <tr>
+                <td class="ultimo">6</td>
+                <td class="alinhar-time">
+                  <img src="assets/img/Flamengo.png" alt="" />
+                  <p>Mengáuvio</p>
+                </td>
+                <td>8</td>
+                <td>4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">4</td>
+                <td class="none">2</td>
+                <td class="none">2</td>
+                <td class="none">0</td>
+                <td class="none">33.7%</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-best-player">
+          <h1>Melhor Jogador da Semana</h1>
+          <div class="container-player">
+            <div class="img-best-player">
+              <img
+                src="https://i.pinimg.com/564x/e1/d3/83/e1d38304fdd1632632d41d2f5bb85911.jpg"
+                alt="neymar"
+              />
+            </div>
+
+            <div class="info-best-player">
+              <h2 class="number-player"># 10</h2>
+              <h2 class="name-player">Neymar Jr</h2>
+              <h3 class="position-player">Meia-Atacente</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempore omnis, rerum natus ducimus nostrum fuga vero beatae nam
+                similique quasi commodi recusandae quas dolorem? Natus sint
+                illum doloremque totam ullam?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                temporibus perferendis, saepe inventore distinctio dicta fuga?
+                Expedita ea vel esse, consequuntur officia possimus error
+                doloremque obcaecati temporibus quo alias !
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Excepturi, vitae! Ab illo nemo molestiae suscipit deleniti.
+                Officia neque adipisci magnam? Fugit, quo alias culpa maxime hic
+                soluta dolores dignissimos est!
+              </p>
+            </div>
+
+            <div class="stats-best-player">
+              <div id="wrapper" class="center">
+                <svg
+                  class="progress blue noselect"
+                  data-progress="54"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 80 80"
+                >
+                  <path
+                    class="track"
+                    d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0"
+                  />
+                  <path
+                    class="fill"
+                    d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0"
+                  />
+                  <text class="value" x="50%" y="55%">0%</text>
+                  <text class="text" x="50%" y="115%">Conversões</text>
+                </svg>
+
+                <svg
+                  class="progress green noselect"
+                  data-progress="75"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 80 80"
+                >
+                  <path
+                    class="track"
+                    d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0"
+                  />
+                  <path
+                    class="fill"
+                    d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0"
+                  />
+                  <text class="value" x="50%" y="55%">0%</text>
+                  <text class="text" x="50%" y="115%">Passes</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="news-container">
+          <h2>Noticias</h2>
+          <div class="news">
+            <div class="card-new">
+              <img
+                src="https://img.freepik.com/vetores-gratis/fundo-gradiente-do-campo-de-futebol_23-2149011660.jpg?size=626&ext=jpg"
+                alt="Imagem da notícia"
+              />
+
+              <h3 class="new-title">Lorem ipsum dolor sit amet consectetur</h3>
+
+              <div class="tempo">
+                <ion-icon name="time-outline"></ion-icon>
+                <p>13 Dezembro 2023</p>
+              </div>
+
+              <p class="new-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                harum quam possimus unde minus dignissimos porro soluta
+                veritatis asperiores! Qui iure qui...
+              </p>
+
+              <div class="btn-new">
+                <button>Leia Mais</button>
+                <div class="share">
+                  <ion-icon name="share-social-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-new">
+              <img
+                src="https://img.freepik.com/vetores-gratis/fundo-gradiente-do-campo-de-futebol_23-2149011660.jpg?size=626&ext=jpg"
+                alt="Imagem da notícia"
+              />
+
+              <h3 class="new-title">Lorem ipsum dolor sit amet consectetur</h3>
+
+              <div class="tempo">
+                <ion-icon name="time-outline"></ion-icon>
+                <p>13 Dezembro 2023</p>
+              </div>
+
+              <p class="new-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                harum quam possimus unde minus dignissimos porro soluta
+                veritatis asperiores! Qui iure qui...
+              </p>
+
+              <div class="btn-new">
+                <button>Leia Mais</button>
+                <div class="share">
+                  <ion-icon name="share-social-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-new">
+              <img
+                src="https://img.freepik.com/vetores-gratis/fundo-gradiente-do-campo-de-futebol_23-2149011660.jpg?size=626&ext=jpg"
+                alt="Imagem da notícia"
+              />
+
+              <h3 class="new-title">Lorem ipsum dolor sit amet consectetur</h3>
+
+              <div class="tempo">
+                <ion-icon name="time-outline"></ion-icon>
+                <p>13 Dezembro 2023</p>
+              </div>
+
+              <p class="new-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                harum quam possimus unde minus dignissimos porro soluta
+                veritatis asperiores! Qui iure qui...
+              </p>
+
+              <div class="btn-new">
+                <button>Leia Mais</button>
+                <div class="share">
+                  <ion-icon name="share-social-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-top">
+          <h2 class="txt">Líderes da Liga</h2>
+          <div class="container-artilheiro">
+            <div class="box-artilheiro">
+              <h2>Gols</h2>
+              <img
+                src="https://i.superesportes.com.br/1okug8VBU-aKF2zgNxbkceW34wc=/1200x1200/smart/imgsapp.mg.superesportes.com.br/app/noticia_126420360808/2022/11/30/3981860/cristiano-ronaldo-comemora-gol-por-portugal-na-copa-do-mundo_1_94705.jpg"
+                alt="Imagem"
+                class="img"
+              />
+
+              <table>
+                <tr>
+                  <td>1º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Cristiano Ronaldo</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>2º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Erling Haaland</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>3º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Germán Cano</td>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <td>4º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Tiquinho</td>
+                  <td>80</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="box-artilheiro">
+              <h2>Assistências</h2>
+              <img
+                src="https://tntsports.com.br/__export/1696694623716/sites/esporteinterativo/img/2023/10/07/gettyimages-1722483352.jpg_423682103.jpg"
+                alt="Imagem"
+                class="img"
+              />
+
+              <table>
+                <tr>
+                  <td>1º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Bellingham</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>2º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Modric</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>3º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>De Bruyne</td>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <td>4º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Bernardo Silva</td>
+                  <td>80</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="box-artilheiro">
+              <h2>Defesas</h2>
+              <img
+                src="https://tntsports.com.br/__export/1574457810365/sites/esporteinterativo/img/2019/11/22/alisson_crop1574457808818.jpg_423682103.jpg"
+                alt="Imagem"
+                class="img"
+              />
+
+              <table>
+                <tr>
+                  <td>1º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Courtois</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>2º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Léo Jardim</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>3º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>João Paulo</td>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <td>4º</td>
+                  <td>
+                    <img
+                      src="assets/img/barcelona.png"
+                      alt="Logo Time 1"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>Ochoa</td>
+                  <td>80</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-times">
+          <h2>Times Participantes</h2>
+          <div class="times">
+            <div class="time">
+              <img src="assets/img/barcelona.png" alt="Time 1" />
+            </div>
+            <div class="time">
+              <img src="assets/img/barcelona.png" alt="Time 2" />
+            </div>
+            <div class="time">
+              <img src="assets/img/barcelona.png" alt="Time 3" />
+            </div>
+            <div class="time">
+              <img src="assets/img/barcelona.png" alt="Time 4" />
+            </div>
+            <div class="time">
+              <img src="assets/img/barcelona.png" alt="Time 5" />
+            </div>
+            <div class="time">
+              <img src="assets/img/barcelona.png" alt="Time 6" />
+            </div>
+            <div class="time">
+              <img src="assets/img/barcelona.png" alt="Time 7" />
+            </div>
+            <div class="time">
+              <img src="assets/img/barcelona.png" alt="Time 8" />
+            </div>
+            <div class="time">
+              <img src="assets/img/Servilla.png" alt="Time 9" />
+            </div>
+            <div class="time">
+              <img src="assets/img/Flamengo.png" alt="Time 10" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023</p>
+      <p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="contato.html">Contato</a>
+      </p>
+    </footer>
+  </body>
+
+  <!-- Icons  -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Carrosel -->
+  <script src="carroselConfrontos.js"></script>
+  <!-- Levar para o topo da página -->
+  <script src="levarAoTopo.js"></script>
+  <!-- Dark mode -->
+  <script src="darkMode.js"></script>
+  <!-- Progressão Melhor Jogador  -->
+  <script src="melhorJogador.js"></script>
+</html>
